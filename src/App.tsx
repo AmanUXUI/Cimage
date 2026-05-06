@@ -302,10 +302,6 @@ export default function App() {
               viewport={{ once: true }}
               className="bg-red-50/50 rounded-[2rem] p-6 sm:p-8 lg:p-12 border-2 border-red-100 flex flex-col space-y-6 sm:space-y-8 relative"
             >
-              {/* Mobile VS Badge */}
-              <div className="lg:hidden absolute -bottom-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-brand-navy rounded-full border-4 border-white shadow-xl flex items-center justify-center z-20">
-                <span className="text-white text-xl font-black italic">VS</span>
-              </div>
               <div className="bg-brand-red text-white py-2 px-6 rounded-full self-start shadow-lg mx-auto lg:mx-0">
                 <span className="text-lg sm:text-xl font-black uppercase tracking-widest">OTHER COLLEGES</span>
               </div>
@@ -325,6 +321,13 @@ export default function App() {
                 ))}
               </ul>
             </motion.div>
+
+            {/* Mobile VS Badge */}
+            <div className="lg:hidden flex items-center justify-center z-20 -my-14 relative pointer-events-none">
+              <div className="w-16 h-16 bg-brand-navy rounded-full border-4 border-white shadow-xl flex items-center justify-center pointer-events-auto">
+                <span className="text-white text-xl font-black italic">VS</span>
+              </div>
+            </div>
 
             {/* CIMAGE Cell */}
             <motion.div 
@@ -841,20 +844,6 @@ export default function App() {
                 </div>
               </motion.button>
 
-              {/* Call Now */}
-              <motion.a 
-                href="tel:9835024444"
-                whileHover={{ scale: 1.05 }}
-                className="w-full lg:flex-1 border-2 border-brand-blue/50 p-1 rounded-2xl flex items-center shadow-xl hover:bg-white/5 transition-colors"
-              >
-                <div className="flex-1 py-4 px-6 text-left">
-                  <p className="text-[10px] font-black text-brand-blue uppercase tracking-widest leading-none mb-1">CALL NOW</p>
-                  <p className="text-2xl font-black text-white leading-none">98350 24444</p>
-                </div>
-                <div className="bg-brand-blue p-4 rounded-xl m-1">
-                  <PhoneCall className="w-6 h-6 text-white" />
-                </div>
-              </motion.a>
 
               {/* Admission Open Badge */}
               <div className="hidden xl:block relative ml-4">
