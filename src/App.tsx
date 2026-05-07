@@ -168,22 +168,22 @@ export default function App() {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 shrink-0 sm:justify-center lg:justify-start">
-              <button className="flex items-center justify-between w-full sm:w-auto bg-brand-red text-white p-1.5 sm:pr-2 rounded-2xl shadow-2xl hover:scale-105 active:scale-95 transition-all group overflow-hidden h-[56px] sm:h-[64px]">
-                <div className="flex items-center px-4 sm:px-6 leading-none">
-                  <span className="text-sm sm:text-xl font-black uppercase tracking-tighter whitespace-nowrap">APPLY FOR BCA ADMISSION</span>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-4 shrink-0 sm:justify-center lg:justify-start">
+              <button className="flex items-center justify-between w-full sm:w-auto bg-brand-red text-white p-2 sm:pr-3 rounded-2xl shadow-2xl hover:scale-105 active:scale-95 transition-all group min-h-[64px] sm:min-h-[72px] flex-1">
+                <div className="flex-1 flex items-center px-4 sm:px-6 leading-tight">
+                  <span className="text-base sm:text-lg font-black uppercase tracking-tighter text-left">APPLY NOW</span>
                 </div>
-                <div className="bg-white/20 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center shrink-0">
-                  <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
+                <div className="bg-white/20 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shrink-0">
+                  <ChevronRight className="w-6 h-6 sm:w-7 sm:h-7 stroke-[3]" />
                 </div>
               </button>
 
-              <button className="flex items-center justify-between w-full sm:w-auto bg-brand-yellow text-brand-navy p-1.5 sm:pr-2 rounded-2xl shadow-2xl hover:scale-105 active:scale-95 transition-all group h-[56px] sm:h-[64px]">
-                <div className="flex items-center px-4 sm:px-6 leading-none">
-                  <span className="text-sm sm:text-xl font-black uppercase tracking-tighter whitespace-nowrap">BOOK FREE COUNSELLING</span>
+              <button className="flex items-center justify-between w-full sm:w-auto bg-brand-yellow text-brand-navy p-2 sm:pr-3 rounded-2xl shadow-2xl hover:scale-105 active:scale-95 transition-all group min-h-[64px] sm:min-h-[72px] flex-1">
+                <div className="flex-1 flex items-center px-4 sm:px-6 leading-tight">
+                  <span className="text-base sm:text-lg font-black uppercase tracking-tighter text-left">BOOK FREE COUNSELLING</span>
                 </div>
-                <div className="bg-black/10 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center shrink-0">
-                  <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
+                <div className="bg-black/10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shrink-0">
+                  <ChevronRight className="w-6 h-6 sm:w-7 sm:h-7 stroke-[3]" />
                 </div>
               </button>
             </div>
@@ -882,13 +882,13 @@ export default function App() {
             </a>
 
             {/* Apply Now Bottom */}
-            <button className="flex-1 bg-brand-red p-6 flex items-center justify-center gap-4 hover:bg-red-700 transition-colors">
-              <div className="bg-white text-brand-red p-2 rounded-lg">
+            <button className="flex-1 bg-brand-red p-6 flex items-center justify-center gap-4 hover:bg-red-700 transition-colors shrink-0">
+              <div className="bg-white text-brand-red p-2 rounded-lg shrink-0">
                 <Edit3 className="w-6 h-6" />
               </div>
-              <div className="text-left">
-                <p className="text-xl font-black uppercase leading-none">Apply Now</p>
-                <p className="text-[10px] font-bold uppercase opacity-80 mt-1">For BCA Admission</p>
+              <div className="text-left shrink-0">
+                <p className="text-2xl font-black uppercase leading-none tracking-tight">Apply Now</p>
+                <p className="text-[11px] font-black uppercase opacity-90 mt-1 tracking-wider">For BCA Admission</p>
               </div>
             </button>
 
